@@ -308,24 +308,24 @@ aside {
     width: calc(100% - 28% - 1em); }
 
 .photo1 {
-  background: linear-gradient(rgba(16, 109, 179, 0.4), rgba(16, 109, 179, 0.4)), url(../IMG/learn-more.jpg);
+  background-image: url(../IMG/learn-more.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right; }
 
 .photo2 {
-  background: linear-gradient(rgba(16, 109, 179, 0.4), rgba(16, 109, 179, 0.4)), url(../IMG/adopt.jpg);
+  background-image: url(../IMG/adopt.jpg);
   background-size: cover;
   background-repeat: no-repeat; }
 
 .photo3 {
-  background: linear-gradient(rgba(16, 109, 179, 0.4), rgba(16, 109, 179, 0.4)), url(../IMG/volunteer.jpg);
+  background-image: url(../IMG/volunteer.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
 
 .photo4 {
-  background: linear-gradient(rgba(16, 109, 179, 0.4), rgba(16, 109, 179, 0.4)), url(../IMG/cutest-photos.jpg);
+  background-image: url(../IMG/cutest-photos.jpg);
   background-size: cover;
   background-repeat: no-repeat; }
 
@@ -527,7 +527,37 @@ footer {
       font-size: 2rem;
       color: white;
       float: none;
-      padding-top: 7em; }
+      padding-top: 6.5em; }
+
+  .photo1 {
+    background-image: linear-gradient(rgba(16, 109, 179, 0.4), rgba(16, 109, 179, 0.4)), url(../IMG/learn-more.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right; }
+    .photo1:hover {
+      background-image: url(../IMG/learn-more.jpg); }
+
+  .photo2 {
+    background-image: linear-gradient(rgba(16, 109, 179, 0.4), rgba(16, 109, 179, 0.4)), url(../IMG/adopt.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .photo2:hover {
+      background-image: url(../IMG/adopt.jpg); }
+
+  .photo3 {
+    background-image: linear-gradient(rgba(16, 109, 179, 0.4), rgba(16, 109, 179, 0.4)), url(../IMG/volunteer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+    .photo3:hover {
+      background-image: url(../IMG/volunteer.jpg); }
+
+  .photo4 {
+    background-image: linear-gradient(rgba(16, 109, 179, 0.4), rgba(16, 109, 179, 0.4)), url(../IMG/cutest-photos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .photo4:hover {
+      background-image: url(../IMG/cutest-photos.jpg); }
 
   /***footer***/
   .footer-wrapper {

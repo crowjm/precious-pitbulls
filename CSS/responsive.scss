@@ -201,7 +201,46 @@ aside {
 		font-size: 2rem;
 		color: white;
 		float: none;
-		padding-top: 7em;
+		padding-top: 6.5em;
+	}
+}
+
+
+.photo1 {
+	background-image: linear-gradient(rgba(16,109,179,.4),rgba(16,109,179,.4)), url(../IMG/learn-more.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right;
+	&:hover {
+		background-image: url(../IMG/learn-more.jpg);
+	}
+}
+
+.photo2 {
+	background-image: linear-gradient(rgba(16,109,179,.4),rgba(16,109,179,.4)), url(../IMG/adopt.jpg);
+	background-size: cover;	
+	background-repeat: no-repeat;
+	&:hover {
+		background-image: url(../IMG/adopt.jpg);
+	}
+}
+
+.photo3 {
+	background-image: linear-gradient(rgba(16,109,179,.4),rgba(16,109,179,.4)), url(../IMG/volunteer.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	&:hover {
+		background-image: url(../IMG/volunteer.jpg);
+	}
+}
+
+.photo4 {
+	background-image: linear-gradient(rgba(16,109,179,.4),rgba(16,109,179,.4)), url(../IMG/cutest-photos.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	&:hover {
+		background-image: url(../IMG/cutest-photos.jpg);
 	}
 }
 

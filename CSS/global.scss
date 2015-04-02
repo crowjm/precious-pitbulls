@@ -323,27 +323,27 @@ aside {
 }
 
 .photo1 {
-	background: linear-gradient(rgba(16,109,179,.4),rgba(16,109,179,.4)), url(../IMG/learn-more.jpg);
+	background-image: url(../IMG/learn-more.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: right;
 }
 
 .photo2 {
-	background: linear-gradient(rgba(16,109,179,.4),rgba(16,109,179,.4)), url(../IMG/adopt.jpg);
+	background-image: url(../IMG/adopt.jpg);
 	background-size: cover;	
 	background-repeat: no-repeat;
 }
 
 .photo3 {
-	background: linear-gradient(rgba(16,109,179,.4),rgba(16,109,179,.4)), url(../IMG/volunteer.jpg);
+	background-image: url(../IMG/volunteer.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
 .photo4 {
-	background: linear-gradient(rgba(16,109,179,.4),rgba(16,109,179,.4)), url(../IMG/cutest-photos.jpg);
+	background-image: url(../IMG/cutest-photos.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
