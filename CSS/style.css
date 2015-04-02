@@ -55,25 +55,17 @@ body {
 
 /***header***/
 header {
-  background-image: url(../IMG/mainphoto.jpg);
+  background-image: url(../IMG/hero.jpg);
   background-size: cover;
+  background-position: center 20%;
   background-repeat: no-repeat;
-  color: #083451;
+  color: white;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   width: 100%; }
 
 .left-logo {
   text-align: center; }
-
-.logo {
-  background-image: url(../IMG/logo.png);
-  background-repeat: no-repeat;
-  height: 2.8125em;
-  width: 2.8125em;
-  display: inline-block;
-  vertical-align: top;
-  border-radius: 1.25em; }
 
 .logo-text {
   display: inline-block;
@@ -83,7 +75,8 @@ header {
   font-weight: 400;
   color: white;
   padding-bottom: 0.25em;
-  padding-top: 0.4em; }
+  padding-top: 0.4em;
+  text-shadow: 3px 3px 3px grey; }
 
 .header-nav {
   text-align: center;
@@ -94,9 +87,9 @@ li {
   font-size: 1em;
   font-weight: 600; }
   li a {
-    color: #b0bdc7; }
+    color: white; }
   li a:hover {
-    color: #083451; }
+    color: white; }
 
 .header-nav li:nth-of-type(2) {
   padding-left: 1.25em; }
@@ -137,7 +130,7 @@ article {
 .photo {
   height: 1.5em;
   width: 1.5em;
-  background-image: url(../IMG/HTEmil.jpg);
+  background-image: url(../IMG/aspca-logo.png);
   margin-top: 0.875em;
   border-radius: 50%;
   background-size: cover;
@@ -226,7 +219,7 @@ aside {
   height: 2.5625em;
   width: 2.5625em;
   border-radius: 50%;
-  background-image: url(../IMG/HTEmil.jpg);
+  background-image: url(../IMG/aspca-logo.png);
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 1em;
@@ -255,25 +248,27 @@ aside {
     margin-right: 0.5em;
     margin-left: 0.5em; }
 
-.ad-border {
+.aside-photo-border {
   border-bottom: 0.0625em solid #e1e7ea;
   border-top: 0.0625em solid #e1e7ea;
   margin-top: 2em; }
 
-.advertisement {
-  background-image: url(../IMG/paddle-lady.jpg);
+.aside-photo {
+  background-image: url(../IMG/nanny-dog.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   height: 18.75em;
   width: 17.5em;
   max-width: 100%;
   margin: 0.25em auto 0 auto; }
 
-.ad-caption {
+.aside-caption {
   text-align: center;
   text-decoration: underline;
   margin: 0.25em auto 0.25em auto;
-  font-size: 0.875em; }
+  font-size: 0.875em;
+  line-height: 1.3; }
 
 .sidebar-content {
   margin-top: 2em;
@@ -313,20 +308,26 @@ aside {
     width: calc(100% - 28% - 1em); }
 
 .photo1 {
-  background-image: url(../IMG/pop-post-1.jpg);
-  background-size: cover; }
+  background: linear-gradient(rgba(16, 109, 179, 0.4), rgba(16, 109, 179, 0.4)), url(../IMG/learn-more.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right; }
 
 .photo2 {
-  background-image: url(../IMG/pop-post-2.jpg);
-  background-size: cover; }
+  background: linear-gradient(rgba(16, 109, 179, 0.4), rgba(16, 109, 179, 0.4)), url(../IMG/adopt.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 .photo3 {
-  background-image: url(../IMG/pop-post-3.jpg);
-  background-size: cover; }
+  background: linear-gradient(rgba(16, 109, 179, 0.4), rgba(16, 109, 179, 0.4)), url(../IMG/volunteer.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .photo4 {
-  background-image: url(../IMG/pop-post-4.jpg);
-  background-size: cover; }
+  background: linear-gradient(rgba(16, 109, 179, 0.4), rgba(16, 109, 179, 0.4)), url(../IMG/cutest-photos.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 /***footer***/
 footer {
@@ -369,18 +370,8 @@ footer {
     float: left; }
 
   .logo-text {
-    color: #083451;
     font-size: 1.125em;
     padding-top: 0.6em; }
-
-  .search-icon {
-    background-image: url(../IMG/search.png);
-    background-size: cover;
-    height: 1.75em;
-    width: 1.75em;
-    float: right;
-    margin-top: -0.375em;
-    margin-left: 0.125em; }
 
   .header-nav {
     float: right;
@@ -404,7 +395,8 @@ footer {
     font-weight: 600;
     text-align: center;
     margin-top: 1em;
-    margin-bottom: 0.25em; }
+    margin-bottom: 0.25em;
+    text-shadow: 3px 3px 3px grey; }
 
   /***main content***/
   section {
@@ -511,12 +503,8 @@ footer {
     margin-top: 0.25em;
     margin-left: 0; }
 
-  .ad-border {
-    border-top: none;
-    border-bottom: none; }
-
-  .ad-caption {
-    text-align: right; }
+  .aside-caption {
+    text-align: left; }
 
   /***popular posts***/
   .popular-posts {
@@ -528,9 +516,18 @@ footer {
     .posts-float .popular-posts-photos {
       width: 100%;
       min-height: 19.5em;
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      position: relative;
+      margin-right: 0;
+      margin-left: 0; }
     .posts-float p {
-      display: none; }
+      position: absolute;
+      width: 20%;
+      margin-left: 2rem;
+      font-size: 2rem;
+      color: white;
+      float: none;
+      padding-top: 7em; }
 
   /***footer***/
   .footer-wrapper {

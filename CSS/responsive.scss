@@ -7,19 +7,8 @@
 }
 
 .logo-text {
-	color: $header-text;
 	font-size: 1.125em;
 	padding-top: 0.6em;
-}
-
-.search-icon {
-	background-image: url(../IMG/search.png);
-	background-size: cover;
-	height: 1.75em;
-	width: 1.75em;
-	float: right;
-	margin-top: -0.375em;
-	margin-left: 0.125em;
 }
 
 .header-nav {
@@ -50,6 +39,7 @@ h1 {
 	text-align: center;
 	margin-top: 1em;
 	margin-bottom: 0.25em;
+	text-shadow: 3px 3px 3px grey;
 }
 
 
@@ -184,13 +174,8 @@ aside {
 	margin-left: 0;
 }
 
-.ad-border {
-	border-top: none;
-	border-bottom: none;
-}
-
-.ad-caption {
-	text-align: right;
+.aside-caption {
+	text-align: left;
 }
 
 /***popular posts***/
@@ -205,9 +190,18 @@ aside {
 		width: 100%;
 		min-height: 19.5em;
 		margin-bottom: 0;
+		position: relative;
+		margin-right: 0;
+		margin-left: 0;
 	}
-	p{
-		display: none;
+	p {
+		position: absolute;
+		width: 20%;
+		margin-left: 2rem;
+		font-size: 2rem;
+		color: white;
+		float: none;
+		padding-top: 7em;
 	}
 }
 
