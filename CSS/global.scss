@@ -173,6 +173,10 @@ blockquote {
 	display: inline-block;
 	vertical-align: top;
 	background-color: $button-img-bg;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+	padding-right: 33px;
+	padding-bottom: 30px;
 }
 
 .comment-photo {
@@ -315,10 +319,13 @@ aside {
 		margin-right: 1em;
 		float: left;
 	}
-	p {
+	.outside-p {
 		float: left;
 		padding-top: 2em;
 		width: calc(100% - 28% - 1em);
+	}
+	.inside-p {
+		display: none;
 	}
 }
 
