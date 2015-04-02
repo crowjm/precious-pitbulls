@@ -536,7 +536,9 @@ footer {
       font-size: 2rem;
       color: white;
       float: none;
-      padding-top: 6.5em; } }
+      padding-top: 6.5em; }
+      .posts-float .inside-p:hover {
+        text-shadow: 3px 3px 3px grey; } }
 .photo1 {
   background-image: linear-gradient(rgba(16, 109, 179, 0.4), rgba(16, 109, 179, 0.4)), url(../IMG/learn-more.jpg); }
   .photo1:hover {
