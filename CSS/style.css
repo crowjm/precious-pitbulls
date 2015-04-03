@@ -537,6 +537,14 @@ footer {
     width: 70%;
     float: left; }
 
+  .article-header {
+    margin-left: 0;
+    margin-right: 0; }
+
+  article {
+    margin-right: 0;
+    margin-left: 0; }
+
   /***aside***/
   aside {
     width: 25%;
