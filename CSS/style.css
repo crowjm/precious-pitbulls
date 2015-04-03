@@ -358,6 +358,11 @@ aside {
   padding-top: 0.5em;
   padding-bottom: 0.5em; }
 
+.posts-container {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto; }
+
 .posts-float {
   overflow: hidden; }
   .posts-float .popular-posts-photos {
@@ -539,9 +544,6 @@ footer {
     width: 70%;
     float: left; }
 
-  .article-header {
-    max-width: 600px; }
-
   /***aside***/
   aside {
     width: 25%;
@@ -549,29 +551,17 @@ footer {
     float: left;
     vertical-align: top;
     margin-top: 1.25em; }
-
-  .big-author-photo {
-    display: block;
-    margin: 0 auto; }
-
-  .sidebar-author-name {
-    display: block;
-    margin-top: 0.25em;
-    text-align: center; }
-
-  .author-social {
-    display: block;
-    text-align: center;
-    margin-top: 0.25em;
-    margin-left: 0; }
-
-  .aside-caption {
-    text-align: left; }
+    aside .author-social {
+      margin-left: 0;
+      margin-top: 0.5em; }
 
   /***popular posts***/
   .popular-posts {
     border-top: 0.0625em solid #e1e7ea;
     clear: both; }
+
+  .posts-container {
+    width: 100%; }
 
   .posts-float {
     width: 25%;
@@ -593,9 +583,12 @@ footer {
       font-size: 2rem;
       color: white;
       float: none;
-      padding-top: 6.5em; }
+      padding-top: 6em; }
       .posts-float .inside-p:hover {
         text-shadow: 3px 3px 3px black; }
+
+  .posts-float:nth-of-type(even) {
+    margin-right: 0; }
 
   .poppost1 {
     background-image: linear-gradient(rgba(16, 109, 179, 0.4), rgba(16, 109, 179, 0.4)), url(../IMG/learn-more.jpg); }
@@ -620,32 +613,31 @@ footer {
   /***footer***/
   .footer-wrapper {
     width: 90%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    overflow: hidden; }
 
   footer {
-    padding-bottom: 1em; }
+    padding-bottom: 1em;
+    overflow: hidden; }
     footer .footer-logo-container {
       width: 68%;
       float: left; }
       footer .footer-logo-container .tiy-logo {
         margin-left: 0;
         margin-right: 0;
-        display: inline-block;
-        vertical-align: top; }
+        display: inline-block; }
       footer .footer-logo-container p {
         display: inline-block;
         vertical-align: top;
         text-align: left;
         margin-right: 0;
-        margin-left: 1em;
-        width: 40%; }
+        margin-left: 1.5em;
+        margin-top: 0; }
 
   .footer-nav {
     float: right; }
     .footer-nav ul {
       text-align: right;
-      padding-top: 0.7em;
-      padding-bottom: 0.5em;
       width: 100%;
       margin-left: 0;
       margin-right: 0; } }
