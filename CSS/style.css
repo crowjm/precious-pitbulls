@@ -125,19 +125,22 @@ body {
 p {
   line-height: 1.8; }
 
+h2, h3 {
+  line-height: 1.2; }
+
 h3 {
   font-size: 1.5em;
   font-weight: 400; }
 
+h2 {
+  font-size: 2em; }
+
 li {
-  font-weight: 600;
-  font-size: 1em; }
+  font-weight: 600; }
 
 .article-header h2 {
   font-weight: 600;
-  font-size: 1.8125em;
-  line-height: 1.2;
-  letter-spacing: 0.025em; }
+  font-size: 1.8125em; }
 .article-header .author-name {
   font-weight: 600;
   font-size: 0.875em; }
@@ -146,7 +149,7 @@ li {
 
 blockquote {
   font-size: 1.875em;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 1.5; }
 
 .comments, .later, .share {
@@ -165,25 +168,13 @@ blockquote {
   font-size: 1.125em;
   color: #106db3; }
 .sidebar-content p {
-  line-height: 1.75;
   font-size: 0.875em; }
-
-h2 {
-  font-size: 2em; }
 
 .footer-logo-container p {
   font-size: 0.8em; }
 
 .footer-nav {
   font-size: 0.875em; }
-
-/***620px mq***/
-.header-nav ul li {
-  font-size: 1.125em; }
-
-.big-header-text h1 {
-  font-size: 3em;
-  font-weight: 600; }
 
 /***whole page***/
 .wrapper, .header-wrapper {
@@ -462,7 +453,9 @@ footer {
       display: block;
       text-align: center;
       margin-top: 1em;
-      margin-bottom: 0.25em; }
+      margin-bottom: 0.25em;
+      font-size: 4em;
+      font-weight: 600; }
 
   /***main content***/
   .article-header {
