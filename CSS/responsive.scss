@@ -39,7 +39,7 @@ h1 {
 	text-align: center;
 	margin-top: 1em;
 	margin-bottom: 0.25em;
-	text-shadow: 3px 3px 3px grey;
+	text-shadow: 3px 3px 3px black;
 }
 
 
@@ -120,7 +120,7 @@ footer {
 
 
 
-@media screen and (min-width:59.375em) {
+@media screen and (min-width:1000px) {
 
 /***header***/
 header {
@@ -141,7 +141,7 @@ h1 {
 	margin-right: 0;
 }
 
-article {
+.article-header {
 	display: inline-block;
 	vertical-align: top;
 	width: 65%;
@@ -200,41 +200,40 @@ aside {
 	.inside-p {
 		display: inline;
 		position: absolute;
-		width: 70%;
+		width: 80%;
 		margin-left: 2rem;
 		font-size: 2rem;
 		color: white;
 		float: none;
 		padding-top: 6.5em;
 		&:hover {
-			text-shadow: 3px 3px 3px grey;
+			text-shadow: 3px 3px 3px black;
 		}
 	}
 }
-}
 
-.photo1 {
+.poppost1 {
 	background-image: linear-gradient(rgba(16,109,179,.4),rgba(16,109,179,.4)), url(../IMG/learn-more.jpg);
 	&:hover {
 		background-image: url(../IMG/learn-more.jpg);
 	}
 }
 
-.photo2 {
+.poppost2 {
 	background-image: linear-gradient(rgba(16,109,179,.4),rgba(16,109,179,.4)), url(../IMG/adopt.jpg);
 	&:hover {
 		background-image: url(../IMG/adopt.jpg);
 	}
 }
 
-.photo3 {
+.poppost3 {
 	background-image: linear-gradient(rgba(16,109,179,.4),rgba(16,109,179,.4)), url(../IMG/volunteer.jpg);
 	&:hover {
 		background-image: url(../IMG/volunteer.jpg);
 	}
 }
 
-.photo4 {
+.poppost4 {
 	background-image: linear-gradient(rgba(16,109,179,.4),rgba(16,109,179,.4)), url(../IMG/cutest-photos.jpg);
 	&:hover {
 		background-image: url(../IMG/cutest-photos.jpg);
@@ -250,19 +249,23 @@ aside {
 
 footer {
 	padding-bottom: 1em;
-	.tiy-logo {
-		margin-left: 0;
-		margin-right: 0;
-		display: inline-block;
-		vertical-align: top;
-	}
-	p {
-		display: inline-block;
-		vertical-align: top;
-		text-align: left;
-		margin-right: 0;
-		margin-left: 1em;
-		width: 40%;
+	.footer-logo-container {
+		width: 68%;
+		float: left;
+		.tiy-logo {
+			margin-left: 0;
+			margin-right: 0;
+			display: inline-block;
+			vertical-align: top;
+		}
+		p {
+			display: inline-block;
+			vertical-align: top;
+			text-align: left;
+			margin-right: 0;
+			margin-left: 1em;
+			width: 40%;
+		}
 	}
 }
 
@@ -277,4 +280,5 @@ footer {
 		margin-right: 0;
 	}
 
+}
 }

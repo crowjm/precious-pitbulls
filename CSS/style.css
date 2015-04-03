@@ -45,168 +45,42 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/***whole page***/
-body {
-  font-family: "Open Sans", sans-serif; }
+header p, h3 {
+  color: white; }
 
-.wrapper {
-  margin: 0 auto;
-  width: 90%; }
+.left-logo h3 {
+  text-shadow: 3px 3px 3px black; }
 
-/***header***/
-header {
-  background-image: url(../IMG/hero.jpg);
-  background-size: cover;
-  background-position: center 20%;
-  background-repeat: no-repeat;
-  color: white;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  width: 100%; }
+li a {
+  color: white; }
+li a:hover {
+  color: white; }
 
-.left-logo {
-  text-align: center; }
-
-.logo-text {
-  display: inline-block;
-  vertical-align: top;
-  margin-left: 0.5em;
-  font-size: 1.5em;
-  font-weight: 400;
-  color: white;
-  padding-bottom: 0.25em;
-  padding-top: 0.4em;
-  text-shadow: 3px 3px 3px grey; }
-
-.header-nav {
-  text-align: center;
-  padding-bottom: 0.5em; }
-
-li {
-  display: inline-block;
-  font-size: 1em;
-  font-weight: 600; }
-  li a {
-    color: white; }
-  li a:hover {
-    color: white; }
-
-.header-nav li:nth-of-type(2) {
-  padding-left: 1.25em; }
-
-h1 {
-  display: none; }
-
-.big-header-text p {
-  font-weight: 600;
-  font-size: 1em;
-  text-align: center;
-  padding-bottom: 0.5em; }
-
-/***main content***/
-section {
-  width: 100%;
-  margin-top: 1.5em; }
-
-/**article**/
-article {
-  width: 100%;
-  vertical-align: top;
+.article-header {
   color: #083452; }
-  article h2 {
-    font-weight: 600;
-    font-size: 1.8125em;
-    line-height: 1.2;
-    letter-spacing: 0.025em; }
-  article a {
+  .article-header a {
     color: #b0bdc7; }
-  article a:hover {
+  .article-header a:hover {
     color: #317ab9; }
+  .article-header .date {
+    color: #b0bdc7; }
 
-.photo, .author-name, .date {
-  display: inline-block;
-  vertical-align: top; }
-
-.photo {
-  height: 1.5em;
-  width: 1.5em;
-  background-image: url(../IMG/aspca-logo.png);
-  margin-top: 0.875em;
-  border-radius: 50%;
-  background-size: cover;
-  background-repeat: no-repeat; }
-
-.author-name {
-  font-weight: 600;
-  font-size: 0.875em;
-  margin-left: 0.5em;
-  margin-top: 1.5em; }
-
-.date {
-  margin-top: 1.5em;
-  margin-left: 0.3125em;
-  font-size: 0.875em;
+article a {
   color: #b0bdc7; }
-
-.article-content {
-  margin-top: 1.5em;
-  line-height: 1.65; }
-  .article-content a {
-    color: #b0bdc7; }
-  .article-content a:hover {
-    color: #317ab9; }
+article a:hover {
+  color: #317ab9; }
 
 blockquote {
-  font-size: 1.875em;
-  font-weight: bold;
-  margin-left: 0.625em;
   border-left: 0.0625em solid #d3d3d3;
-  margin-bottom: 0.1875em;
-  color: #106db3;
-  line-height: 1.5; }
-  blockquote p {
-    padding-left: 1em; }
-
-/**interactive icons**/
-.interact {
-  margin-top: 1.125em; }
+  color: #106db3; }
 
 .comments, .later, .share {
-  font-size: 0.875em;
-  font-weight: 600;
-  background-color: #a3b3bf;
-  width: 50%;
-  margin-top: 1em; }
+  background-color: #a3b3bf; }
 
 .comment-photo, .read-photo, .share-photo {
-  display: inline-block;
-  vertical-align: top;
-  background-color: #5e686f;
-  background-repeat: no-repeat;
-  box-sizing: border-box;
-  padding-right: 33px;
-  padding-bottom: 30px; }
-
-.comment-photo {
-  background-image: url(../IMG/comments-icon.png);
-  height: 1.875em;
-  width: 2.125em; }
-
-.read-photo {
-  background-image: url(../IMG/read-later-icon.png);
-  height: 1.875em;
-  width: 2.125em; }
-
-.share-photo {
-  background-image: url(../IMG/share-icon.png);
-  height: 1.875em;
-  width: 2.125em; }
+  background-color: #5e686f; }
 
 .comments p, .later p, .share p {
-  display: inline-block;
-  vertical-align: top;
-  margin-top: 0.625em;
-  margin-left: 0.5em;
   color: #fff; }
 
 a:hover .comment-photo, a:hover .read-photo, a:hover .share-photo {
@@ -215,84 +89,262 @@ a:hover .comment-photo, a:hover .read-photo, a:hover .share-photo {
 a:hover .comments, a:hover .later, a:hover .share {
   background-color: #106db3; }
 
-/**aside**/
 aside {
   color: #a3b3bf; }
 
-.big-author-photo {
-  height: 2.5625em;
-  width: 2.5625em;
-  border-radius: 50%;
-  background-image: url(../IMG/aspca-logo.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-top: 1em;
-  display: inline-block;
-  vertical-align: top; }
-
 .sidebar-author-name {
-  margin-top: 2em;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
-  font-size: 0.875em;
-  color: #106db3;
-  font-weight: 600;
-  display: inline-block;
-  vertical-align: top; }
+  color: #106db3; }
 
-.author-social {
-  display: inline-block;
-  vertical-align: top;
-  margin-top: 1.75em; }
-  .author-social li {
-    display: inline-block;
-    vertical-align: top;
-    font-size: 0.875em; }
-  .author-social li:nth-of-type(2) {
-    margin-right: 0.5em;
-    margin-left: 0.5em; }
+.author-social li a {
+  color: black; }
+.author-social li a:hover {
+  color: black; }
 
 .aside-photo-border {
   border-bottom: 0.0625em solid #e1e7ea;
-  border-top: 0.0625em solid #e1e7ea;
-  margin-top: 2em; }
+  border-top: 0.0625em solid #e1e7ea; }
 
-.aside-photo {
-  background-image: url(../IMG/nanny-dog.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 18.75em;
-  width: 17.5em;
-  max-width: 100%;
-  margin: 0.25em auto 0 auto; }
+.sidebar-content h4 {
+  color: #106db3; }
+
+.popular-posts {
+  color: #083452; }
+
+footer {
+  background-color: #083452;
+  color: #a3b3bf; }
+
+body {
+  font-family: "Open Sans", sans-serif; }
+
+p {
+  line-height: 1.8; }
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 400; }
+
+li {
+  font-weight: 600;
+  font-size: 1em; }
+
+.article-header h2 {
+  font-weight: 600;
+  font-size: 1.8125em;
+  line-height: 1.2;
+  letter-spacing: 0.025em; }
+.article-header .author-name {
+  font-weight: 600;
+  font-size: 0.875em; }
+.article-header .date {
+  font-size: 0.875em; }
+
+blockquote {
+  font-size: 1.875em;
+  font-weight: bold;
+  line-height: 1.5; }
+
+.comments, .later, .share {
+  font-size: 0.875em;
+  font-weight: 600; }
+
+.sidebar-author-name {
+  font-weight: 600;
+  font-size: 0.875em; }
 
 .aside-caption {
-  text-align: center;
-  text-decoration: underline;
-  margin: 0.25em auto 0.25em auto;
   font-size: 0.875em;
   line-height: 1.3; }
+
+.sidebar-content h4 {
+  font-size: 1.125em;
+  color: #106db3; }
+.sidebar-content p {
+  line-height: 1.75;
+  font-size: 0.875em; }
+
+h2 {
+  font-size: 2em; }
+
+.footer-logo-container p {
+  font-size: 0.8em; }
+
+.footer-nav {
+  font-size: 0.875em; }
+
+/***whole page***/
+.wrapper, .header-wrapper {
+  margin: 0 auto;
+  width: 90%; }
+
+.header-wrapper {
+  padding-top: 3em;
+  padding-bottom: 3em; }
+
+/***header***/
+header {
+  background-image: linear-gradient(rgba(16, 109, 179, 0.4), rgba(16, 109, 179, 0.4)), url(../IMG/hero.jpg);
+  background-size: cover;
+  background-position: center 20%;
+  background-repeat: no-repeat;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  width: 100%; }
+
+.left-logo {
+  text-align: center; }
+  .left-logo .logo-text {
+    padding-bottom: 0.25em;
+    padding-top: 0.4em; }
+
+.header-nav {
+  text-align: center;
+  padding-bottom: 0.5em;
+  padding-top: 0.25em; }
+  .header-nav li {
+    display: inline-block; }
+    .header-nav li a {
+      text-decoration: none; }
+  .header-nav li:nth-of-type(2) {
+    padding-left: 1.25em; }
+
+.big-header-text h1 {
+  display: none; }
+.big-header-text p {
+  text-align: center;
+  padding-bottom: 0.5em; }
+
+/***main content***/
+.main-content {
+  width: 100%;
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+  display: inline-block; }
+
+/**article**/
+.article-header .photo, .article-header .author-name, .article-header .date {
+  display: inline-block;
+  vertical-align: top; }
+.article-header .photo {
+  height: 1.5em;
+  width: 1.5em;
+  background-image: url(../IMG/aspca-logo.png);
+  margin-top: 0.875em;
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat; }
+.article-header .author-name {
+  margin-left: 0.5em;
+  margin-top: 1.5em; }
+.article-header .date {
+  margin-top: 1.5em;
+  margin-left: 0.3125em; }
+
+article {
+  margin-top: 1.5em; }
+  article p {
+    margin-bottom: 1em; }
+
+blockquote {
+  margin-left: 0.625em;
+  padding-left: 1em;
+  margin-bottom: 0.75em; }
+
+/*interactive icons*/
+.interact {
+  margin-top: 1.125em;
+  margin-bottom: 3em; }
+
+.comments, .later, .share {
+  width: 50%;
+  margin-top: 1em; }
+
+.comment-photo, .read-photo, .share-photo {
+  display: inline-block;
+  vertical-align: top;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  padding-right: 33px;
+  padding-bottom: 30px;
+  height: 1.875em;
+  width: 2.125em; }
+
+.comment-photo {
+  background-image: url(../IMG/comments-icon.png); }
+
+.read-photo {
+  background-image: url(../IMG/read-later-icon.png); }
+
+.share-photo {
+  background-image: url(../IMG/share-icon.png); }
+
+.comments p, .later p, .share p {
+  display: inline-block;
+  margin-left: 0.5em;
+  box-sizing: border-box;
+  padding-top: 0.15em; }
+
+/***aside***/
+aside {
+  display: inline-block; }
+  aside .big-author-photo {
+    height: 2.5625em;
+    width: 2.5625em;
+    border-radius: 50%;
+    background-image: url(../IMG/aspca-logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 1em;
+    display: inline-block; }
+  aside .sidebar-author-name {
+    margin-top: 2em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    display: inline-block;
+    vertical-align: top; }
+  aside .author-social {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 1.75em; }
+    aside .author-social li {
+      display: inline-block;
+      vertical-align: top;
+      font-size: 0.875em; }
+      aside .author-social li a {
+        text-decoration: none; }
+    aside .author-social li:nth-of-type(2) {
+      margin-right: 0.5em;
+      margin-left: 0.5em; }
+
+.aside-photo-border {
+  margin-top: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em; }
+  .aside-photo-border .aside-photo {
+    background-image: url(../IMG/nanny-dog.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 18.75em;
+    width: 17.5em;
+    max-width: 100%;
+    margin: 0.25em auto 0 auto; }
+  .aside-photo-border .aside-caption {
+    margin: 0.25em auto 0.25em auto; }
 
 .sidebar-content {
   margin-top: 2em;
   margin-bottom: 2em; }
-  .sidebar-content h4 {
-    font-size: 1.125em;
-    color: #106db3; }
   .sidebar-content p {
-    margin-top: 0.5em;
-    line-height: 1.75;
-    font-size: 0.875em; }
+    margin-top: 0.5em; }
 
 /***popular posts***/
 .popular-posts {
-  width: 100%;
-  font-size: 2em;
   padding-top: 0.5em;
-  color: #083452;
   padding-bottom: 0.5em;
-  text-align: center; }
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto; }
 
 .posts-float {
   overflow: hidden;
@@ -301,47 +353,42 @@ aside {
   .posts-float .popular-posts-photos {
     width: 28%;
     min-height: 5.5em;
-    /*^these are what's giving me trouble*/
-    line-height: 1.4;
     margin-bottom: 0.5em;
     margin-right: 1em;
     float: left; }
   .posts-float .outside-p {
     float: left;
-    padding-top: 2em;
-    width: calc(100% - 28% - 1em); }
+    padding-top: 2em; }
   .posts-float .inside-p {
     display: none; }
 
-.photo1 {
+.poppost1 {
   background-image: url(../IMG/learn-more.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right; }
 
-.photo2 {
+.poppost2 {
   background-image: url(../IMG/adopt.jpg);
   background-size: cover;
   background-repeat: no-repeat; }
 
-.photo3 {
+.poppost3 {
   background-image: url(../IMG/volunteer.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center 35%; }
 
-.photo4 {
+.poppost4 {
   background-image: url(../IMG/cutest-photos.jpg);
   background-size: cover;
   background-repeat: no-repeat; }
 
 /***footer***/
 footer {
-  background-color: #083452;
-  color: #a3b3bf;
-  width: 100%;
-  padding-top: 1em; }
-  footer .tiy-logo {
+  padding-top: 1em;
+  overflow: hidden; }
+  footer .footer-logo-container .tiy-logo {
     background-image: url(../IMG/theironyard.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -349,25 +396,22 @@ footer {
     width: 3.0625em;
     margin-left: auto;
     margin-right: auto; }
-  footer p {
+  footer .footer-logo-container p {
     margin-top: 1em;
     margin-right: auto;
     margin-left: auto;
     width: 90%;
-    text-align: center;
-    font-size: 0.8em; }
+    text-align: center; }
 
-.footer-nav {
-  font-size: 0.875em; }
-  .footer-nav ul {
-    width: 95%;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em; }
-    .footer-nav ul li {
-      display: inline-block;
-      font-size: 0.8em; }
+.footer-nav ul {
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em; }
+  .footer-nav ul li {
+    display: inline-block;
+    font-size: 0.8em; }
 
 @media screen and (min-width: 38.75em) {
   /***header***/
@@ -402,7 +446,7 @@ footer {
     text-align: center;
     margin-top: 1em;
     margin-bottom: 0.25em;
-    text-shadow: 3px 3px 3px grey; }
+    text-shadow: 3px 3px 3px black; }
 
   /***main content***/
   section {
@@ -463,7 +507,7 @@ footer {
   /***footer***/
   footer {
     clear: both; } }
-@media screen and (min-width: 59.375em) {
+@media screen and (min-width: 1000px) {
   /***header***/
   header {
     padding-top: 2em;
@@ -481,7 +525,7 @@ footer {
     margin-left: 0;
     margin-right: 0; }
 
-  article {
+  .article-header {
     display: inline-block;
     vertical-align: top;
     width: 65%;
@@ -531,62 +575,66 @@ footer {
     .posts-float .inside-p {
       display: inline;
       position: absolute;
-      width: 70%;
+      width: 80%;
       margin-left: 2rem;
       font-size: 2rem;
       color: white;
       float: none;
       padding-top: 6.5em; }
       .posts-float .inside-p:hover {
-        text-shadow: 3px 3px 3px grey; } }
-.photo1 {
-  background-image: linear-gradient(rgba(16, 109, 179, 0.4), rgba(16, 109, 179, 0.4)), url(../IMG/learn-more.jpg); }
-  .photo1:hover {
-    background-image: url(../IMG/learn-more.jpg); }
+        text-shadow: 3px 3px 3px black; }
 
-.photo2 {
-  background-image: linear-gradient(rgba(16, 109, 179, 0.4), rgba(16, 109, 179, 0.4)), url(../IMG/adopt.jpg); }
-  .photo2:hover {
-    background-image: url(../IMG/adopt.jpg); }
+  .poppost1 {
+    background-image: linear-gradient(rgba(16, 109, 179, 0.4), rgba(16, 109, 179, 0.4)), url(../IMG/learn-more.jpg); }
+    .poppost1:hover {
+      background-image: url(../IMG/learn-more.jpg); }
 
-.photo3 {
-  background-image: linear-gradient(rgba(16, 109, 179, 0.4), rgba(16, 109, 179, 0.4)), url(../IMG/volunteer.jpg); }
-  .photo3:hover {
-    background-image: url(../IMG/volunteer.jpg); }
+  .poppost2 {
+    background-image: linear-gradient(rgba(16, 109, 179, 0.4), rgba(16, 109, 179, 0.4)), url(../IMG/adopt.jpg); }
+    .poppost2:hover {
+      background-image: url(../IMG/adopt.jpg); }
 
-.photo4 {
-  background-image: linear-gradient(rgba(16, 109, 179, 0.4), rgba(16, 109, 179, 0.4)), url(../IMG/cutest-photos.jpg); }
-  .photo4:hover {
-    background-image: url(../IMG/cutest-photos.jpg); }
+  .poppost3 {
+    background-image: linear-gradient(rgba(16, 109, 179, 0.4), rgba(16, 109, 179, 0.4)), url(../IMG/volunteer.jpg); }
+    .poppost3:hover {
+      background-image: url(../IMG/volunteer.jpg); }
 
-/***footer***/
-.footer-wrapper {
-  width: 90%;
-  margin: 0 auto; }
+  .poppost4 {
+    background-image: linear-gradient(rgba(16, 109, 179, 0.4), rgba(16, 109, 179, 0.4)), url(../IMG/cutest-photos.jpg); }
+    .poppost4:hover {
+      background-image: url(../IMG/cutest-photos.jpg); }
 
-footer {
-  padding-bottom: 1em; }
-  footer .tiy-logo {
-    margin-left: 0;
-    margin-right: 0;
-    display: inline-block;
-    vertical-align: top; }
-  footer p {
-    display: inline-block;
-    vertical-align: top;
-    text-align: left;
-    margin-right: 0;
-    margin-left: 1em;
-    width: 40%; }
+  /***footer***/
+  .footer-wrapper {
+    width: 90%;
+    margin: 0 auto; }
 
-.footer-nav {
-  float: right; }
-  .footer-nav ul {
-    text-align: right;
-    padding-top: 0.7em;
-    padding-bottom: 0.5em;
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0; }
+  footer {
+    padding-bottom: 1em; }
+    footer .footer-logo-container {
+      width: 68%;
+      float: left; }
+      footer .footer-logo-container .tiy-logo {
+        margin-left: 0;
+        margin-right: 0;
+        display: inline-block;
+        vertical-align: top; }
+      footer .footer-logo-container p {
+        display: inline-block;
+        vertical-align: top;
+        text-align: left;
+        margin-right: 0;
+        margin-left: 1em;
+        width: 40%; }
+
+  .footer-nav {
+    float: right; }
+    .footer-nav ul {
+      text-align: right;
+      padding-top: 0.7em;
+      padding-bottom: 0.5em;
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -19,3 +19,105 @@ $border: #e1e7ea;
 $pop-posts: #083452;
 $footer-bg: #083452;
 $footer-text: #a3b3bf;
+
+header p, h3 {
+	color: white;
+}
+
+.left-logo h3 {
+	text-shadow: 3px 3px 3px black;
+}
+
+li {
+		a {
+			color: white;
+		}
+		a:hover {
+			color: white;
+		}
+}
+
+.article-header {
+	color: $body-text;
+	a {
+		color: $body-link-no-hover;
+	}
+	a:hover {
+		color: $body-link-hover;
+	}
+	.date {
+		color: $body-date;
+	}
+}
+
+article {
+	a {
+		color: $body-link-no-hover;
+	}
+	a:hover {
+		color: $body-link-hover;
+	}	
+}
+
+blockquote {
+	border-left: 0.0625em solid $blockquote-border;
+	color: $blockquote-text;
+}
+
+.comments, .later, .share {
+	background-color: $button-bg;
+}
+
+.comment-photo, .read-photo, .share-photo {
+	background-color: $button-img-bg;
+}
+
+.comments p, .later p, .share p {
+	color: $button-p;
+}
+
+a:hover .comment-photo, a:hover .read-photo, a:hover .share-photo {
+	background-color: $button-img-bg-hover;
+}
+a:hover .comments, a:hover .later, a:hover .share {
+	background-color: $button-bg-hover;
+}
+
+aside {
+	color: $aside-text;
+}
+
+.sidebar-author-name {
+		color: $aside-name;
+}
+
+.author-social {
+	li {
+		a {
+			color:  black;
+		}
+		a:hover {
+			color: black;
+		}
+	}
+}
+
+.aside-photo-border {
+	border-bottom: 0.0625em solid $border;
+	border-top: 0.0625em solid $border;
+}
+
+.sidebar-content {
+		h4 {
+			color: $aside-section-header;
+		}
+}
+
+.popular-posts {
+	color: $pop-posts;
+}
+
+footer {
+	background-color: $footer-bg;
+	color: $footer-text;
+}

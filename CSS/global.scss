@@ -1,26 +1,21 @@
-$font-fam: 'Open Sans', sans-serif;
-
-
 /***whole page***/
-
-body {
-	font-family: $font-fam;
-}
-
-.wrapper {
+.wrapper, .header-wrapper {
 	margin: 0 auto;
 	width: 90%;
 }
 
+.header-wrapper {
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+
 
 /***header***/
-
 header {
-	background-image: url(../IMG/hero.jpg);
+	background-image: linear-gradient(rgba(16,109,179,.4),rgba(16,109,179,.4)), url(../IMG/hero.jpg);
 	background-size: cover;
 	background-position: center 20%;
 	background-repeat: no-repeat;
-	color: white;
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;	
 	width: 100%;					
@@ -28,143 +23,92 @@ header {
 
 .left-logo {
 	text-align: center;
-}
-
-.logo-text {
-	display: inline-block;
-	vertical-align: top;
-	margin-left: 0.5em;
-	font-size: 1.5em;
-	font-weight: 400;
-	color: white;
-	padding-bottom: 0.25em;
-	padding-top: 0.4em;
-	text-shadow: 3px 3px 3px grey;
+	.logo-text {
+		padding-bottom: 0.25em;
+		padding-top: 0.4em;
+	}
 }
 
 .header-nav {
 	text-align: center;
 	padding-bottom: 0.5em;
-}
-
-li {
-	display: inline-block;
-	font-size: 1em;
-	font-weight: 600;
+	padding-top: 0.25em;
+	li {
+		display: inline-block;
 		a {
-			color: white;
+			text-decoration: none;
 		}
-		a:hover {
-			color: white;
-		}
+	}
+	li:nth-of-type(2) {
+		padding-left: 1.25em;
+	}
 }
 
-.header-nav li:nth-of-type(2) {
-	padding-left: 1.25em;
+.big-header-text {
+	h1 {
+		display: none;
+	}
+		p {
+		text-align: center;
+		padding-bottom: 0.5em;
+	}
 }
-
-h1 {
-	display: none;
-}
-
-.big-header-text p {
-	font-weight: 600;
-	font-size: 1em;
-	text-align: center;
-	padding-bottom: 0.5em;
-}
-
 
 
 /***main content***/
-
-section {
+.main-content {
 	width: 100%;
-	margin-top: 1.5em;
+	margin-top: 2.5em;
+	margin-bottom: 2.5em;
+	display: inline-block;
 }
 
 /**article**/
-article {
-	width: 100%;
-	vertical-align: top;
-	color: $body-text;
-		h2 {
-			font-weight: 600;
-			font-size: 1.8125em;
-			line-height: 1.2;
-			letter-spacing: 0.025em;
-		}
-			a {
-				color: $body-link-no-hover;
-			}
-			a:hover {
-				color: $body-link-hover;
-			}
-}
-
-.photo, .author-name, .date {
-	display: inline-block;
-	vertical-align: top;
-}
-
-.photo {
-	height: 1.5em;
-	width: 1.5em;
-	background-image: url(../IMG/aspca-logo.png);
-	margin-top: 0.875em;
-	border-radius: 50%;
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-.author-name {
-	font-weight: 600;
-	font-size: 0.875em;
-	margin-left: 0.5em;
-	margin-top: 1.5em;
-}
-
-.date {
-	margin-top: 1.5em;
-	margin-left: 0.3125em;
-	font-size: 0.875em;
-	color: $body-date;
-}
-
-.article-content {
-	margin-top: 1.5em;
-	line-height: 1.65;
-	a {
-		color: $body-link-no-hover;
+.article-header {
+	.photo, .author-name, .date {
+		display: inline-block;
+		vertical-align: top;
 	}
-	a:hover {
-		color: $body-link-hover;
-	}	
+	.photo {
+		height: 1.5em;
+		width: 1.5em;
+		background-image: url(../IMG/aspca-logo.png);
+		margin-top: 0.875em;
+		border-radius: 50%;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.author-name {
+		margin-left: 0.5em;
+		margin-top: 1.5em;
+	}
+	.date {
+		margin-top: 1.5em;
+		margin-left: 0.3125em;
+	}
+}
+
+article {
+	margin-top: 1.5em;
+	p {
+		margin-bottom: 1em;
+	}
 }
 
 blockquote {
-	font-size: 1.875em;
-	font-weight: bold;
 	margin-left: 0.625em;
-	border-left: 0.0625em solid $blockquote-border;
-	margin-bottom: 0.1875em;
-	color: $blockquote-text;
-	line-height: 1.5;
-	p {
-		padding-left: 1em;
-	}
+	padding-left: 1em;
+	margin-bottom: 0.75em;
 }
 
 
-/**interactive icons**/
+/*interactive icons*/
 .interact {
 	margin-top: 1.125em;
+	margin-bottom: 3em;
 }
 
 .comments, .later, .share {
-	font-size: 0.875em;
-	font-weight: 600;
-	background-color: $button-bg;
 	width: 50%;
 	margin-top: 1em;
 }
@@ -172,75 +116,55 @@ blockquote {
 .comment-photo, .read-photo, .share-photo {
 	display: inline-block;
 	vertical-align: top;
-	background-color: $button-img-bg;
 	background-repeat: no-repeat;
 	box-sizing: border-box;
 	padding-right: 33px;
 	padding-bottom: 30px;
+	height: 1.875em;
+	width: 2.125em;
 }
 
 .comment-photo {
 	background-image: url(../IMG/comments-icon.png);
-	height: 1.875em;
-	width: 2.125em;
 }
 
 .read-photo {
 	background-image: url(../IMG/read-later-icon.png);
-	height: 1.875em;
-	width: 2.125em;
 }
 
 .share-photo {
 	background-image: url(../IMG/share-icon.png);
-	height: 1.875em;
-	width: 2.125em;
 }
 
 .comments p, .later p, .share p {
 	display: inline-block;
-	vertical-align: top;
-	margin-top: 0.625em;
 	margin-left: 0.5em;
-	color: $button-p;
+	box-sizing: border-box;
+	padding-top: 0.15em;
 }
 
-a:hover .comment-photo, a:hover .read-photo, a:hover .share-photo {
-	background-color: $button-img-bg-hover;
-}
-a:hover .comments, a:hover .later, a:hover .share {
-	background-color: $button-bg-hover;
-}
 
-/**aside**/
+/***aside***/
 aside {
-	color: $aside-text;
-}
-
-.big-author-photo {
-	height: 2.5625em;
-	width: 2.5625em;
-	border-radius: 50%;
-	background-image: url(../IMG/aspca-logo.png);
-	background-size: cover;
-	background-repeat: no-repeat;
-	margin-top: 1em;
 	display: inline-block;
-	vertical-align: top;
-}
-
-.sidebar-author-name {
-	margin-top: 2em;
-	margin-left: 0.5em;
-	margin-right: 0.5em;
-	font-size: 0.875em;
-	color: $aside-name;
-	font-weight: 600;
-	display: inline-block;
-	vertical-align: top;
-}
-
-.author-social {
+	.big-author-photo {
+		height: 2.5625em;
+		width: 2.5625em;
+		border-radius: 50%;
+		background-image: url(../IMG/aspca-logo.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		margin-top: 1em;
+		display: inline-block;
+	}
+	.sidebar-author-name {
+		margin-top: 2em;
+		margin-left: 0.5em;
+		margin-right: 0.5em;
+		display: inline-block;
+		vertical-align: top;
+	}
+	.author-social {
 	display: inline-block;
 	vertical-align: top;
 	margin-top: 1.75em;
@@ -248,62 +172,52 @@ aside {
 			display: inline-block;
 			vertical-align: top;
 			font-size: 0.875em;
+			a {
+				text-decoration: none;
+			}
 		}
 		li:nth-of-type(2) {
 			margin-right: 0.5em;
 			margin-left: 0.5em;
 		}
+	}
 }
 
 .aside-photo-border {
-	border-bottom: 0.0625em solid $border;
-	border-top: 0.0625em solid $border;
 	margin-top: 2em;
-}
-
-.aside-photo {
-	background-image: url(../IMG/nanny-dog.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	height: 18.75em;
-	width: 17.5em;
-	max-width: 100%;
-	margin: 0.25em auto 0 auto;
-}
-
-.aside-caption {
-	text-align: center;
-	text-decoration: underline;
-	margin: 0.25em auto 0.25em auto;
-	font-size: 0.875em;
-	line-height: 1.3;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	.aside-photo {
+		background-image: url(../IMG/nanny-dog.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		height: 18.75em;
+		width: 17.5em;
+		max-width: 100%;
+		margin: 0.25em auto 0 auto;
+	}
+	.aside-caption {
+		margin: 0.25em auto 0.25em auto;
+	}
 }
 
 .sidebar-content {
 	margin-top: 2em;
 	margin-bottom: 2em;
-		h4 {
-			font-size: 1.125em;
-			color: $aside-section-header;
-		}
 		 p {
 			margin-top: 0.5em;
-			line-height: 1.75;
-			font-size: 0.875em;
 		}
 }
 
 
 /***popular posts***/
-
 .popular-posts {
-	width: 100%;
-	font-size: 2em;
 	padding-top: 0.5em;
-	color: $pop-posts;
 	padding-bottom: 0.5em;
-	text-align: center;
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .posts-float {
@@ -313,8 +227,6 @@ aside {
 	.popular-posts-photos {
 		width: 28%;
 		min-height: 5.5em;
-		/*^these are what's giving me trouble*/
-		line-height: 1.4;
 		margin-bottom: 0.5em;
 		margin-right: 1em;
 		float: left;
@@ -322,78 +234,73 @@ aside {
 	.outside-p {
 		float: left;
 		padding-top: 2em;
-		width: calc(100% - 28% - 1em);
 	}
 	.inside-p {
 		display: none;
 	}
 }
 
-.photo1 {
+.poppost1 {
 	background-image: url(../IMG/learn-more.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: right;
 }
 
-.photo2 {
+.poppost2 {
 	background-image: url(../IMG/adopt.jpg);
 	background-size: cover;	
 	background-repeat: no-repeat;
 }
 
-.photo3 {
+.poppost3 {
 	background-image: url(../IMG/volunteer.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center 35%;
 }
 
-.photo4 {
+.poppost4 {
 	background-image: url(../IMG/cutest-photos.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
 
-
 /***footer***/
-
 footer {
-	background-color: $footer-bg;
-	color: $footer-text;
-	width: 100%;
 	padding-top: 1em;
-		.tiy-logo {
-			background-image: url(../IMG/theironyard.png);
-			background-size: cover;
-			background-repeat: no-repeat;
-			height: 2.375em;
-			width: 3.0625em;
-			margin-left: auto;
-			margin-right: auto;
-		}
-		p {
-			margin-top: 1em;
-			margin-right: auto;
-			margin-left: auto;
-			width: 90%;
-			text-align: center;
-			font-size: 0.8em;
+	overflow: hidden;
+		.footer-logo-container {
+			.tiy-logo {
+				background-image: url(../IMG/theironyard.png);
+				background-size: cover;
+				background-repeat: no-repeat;
+				height: 2.375em;
+				width: 3.0625em;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			p {
+				margin-top: 1em;
+				margin-right: auto;
+				margin-left: auto;
+				width: 90%;
+				text-align: center;
+			}
 		}
 }
 
 .footer-nav {
-			font-size: 0.875em;
-				ul {
-					width: 95%;
-					margin: 0 auto;
-					text-align: center;
-					padding-top: 0.5em;
-					padding-bottom: 0.5em;
-					li {
-						display: inline-block;
-						font-size: 0.8em;
-					}
-				}
+	ul {
+		width: 95%;
+		margin: 0 auto;
+		text-align: center;
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+		li {
+			display: inline-block;
+			font-size: 0.8em;
 		}
+	}
+}
