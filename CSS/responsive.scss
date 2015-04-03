@@ -1,13 +1,16 @@
-@media screen and (min-width: 38.75em) {
+@media screen and (min-width: 38.75em) /*620px*/ {
 
 /***header***/
 .left-logo {
-		margin-top: 0.625em;
-		float: left;
+	margin-top: 0.625em;
+	float: left;
+}
+
+.left-logo h3 {
+	text-shadow: none;
 }
 
 .logo-text {
-	font-size: 1.125em;
 	padding-top: 0.6em;
 }
 
@@ -29,35 +32,39 @@
 
 .big-header-text {
 	clear: both;
-}
-
-h1 {
-	display: block;
-	color: $header-h1;
-	font-size: 3em;
-	font-weight: 600;
-	text-align: center;
-	margin-top: 1em;
-	margin-bottom: 0.25em;
-	text-shadow: 3px 3px 3px black;
+		h1 {
+		display: block;
+		text-align: center;
+		margin-top: 1em;
+		margin-bottom: 0.25em;
+	}
 }
 
 
 /***main content***/
-section {
-	margin-top: 2em;
-	max-width: 37.5em; /*600px*/
-	margin-left: auto;
+.article-header {
+	max-width: 600px;
 	margin-right: auto;
+	margin-left: auto;
 }
 
+article {
+	max-width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+	p:last-of-type {
+		margin-bottom: 1em;
+	}
+}
+
+/*interactive icons*/
 .interact {
-	margin: 0 0 1em 0;
+	margin: 0 auto 1em auto;
+	max-width: 600px;
 }
 
 .comments, .later, .share {
 	display: inline-block;
-	vertical-align: top;
 }
 
 .comments {
@@ -76,6 +83,12 @@ section {
 
 
 /***aside***/
+aside {
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
 
 .big-author-photo {
 	height: 5.125em;
@@ -85,30 +98,24 @@ section {
 }
 
 .sidebar-author-name {
-	display: inline-block;
-	vertical-align: top;
 	margin-top: 4em;
 }
 
 .author-social {
-	float: none;
-	display: inline-block;
-	vertical-align: top;
 	margin-top: 3.5em;
 	margin-left: 1em;
 }
 
-/***popular posts***/
-.popular-posts {
-	font-size: 3em;
-	overflow: hidden;
-}
 
+/***popular posts***/
 .posts-float {
 	width: 46%;
 	float: left;
 	margin-bottom: 1em;
-	margin-left: 4%;
+}
+
+.posts-float:nth-of-type(even) {
+	margin-right: 4%;
 }
 
 
@@ -121,39 +128,37 @@ footer {
 
 
 @media screen and (min-width:1000px) {
-
 /***header***/
 header {
 	padding-top: 2em;
 	padding-bottom: 3em;
 }
 
-h1 {
-	font-size: 5em;
-	margin-top: 0;
-	margin-bottom: 0;
-} 
+.big-header-text {
+	h1 {
+		font-size: 5em;
+		margin-top: 0;
+		margin-bottom: 0;
+	} 
+}
 
 /***article***/
 .main-content {
-	max-width: 75em; /*1200px*/
-	margin-left: 0;
-	margin-right: 0;
+	width: 70%;
+	float: left;
 }
 
 .article-header {
-	display: inline-block;
-	vertical-align: top;
-	width: 65%;
-	margin-right: 5%;
+	max-width: 600px;
 }
 
 /***aside***/
 aside {
-	display: inline-block;
+	width: 25%;
+	margin-left: 5%;
+	float: left;
 	vertical-align: top;
-	width: 28%;
-	margin-left: 2%;
+	margin-top: 1.25em;
 }
 
 .big-author-photo {
@@ -181,6 +186,7 @@ aside {
 /***popular posts***/
 .popular-posts {
 	border-top: 0.0625em solid #e1e7ea;
+	clear: both;
 }
 
 .posts-float {

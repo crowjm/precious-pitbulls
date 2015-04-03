@@ -93,6 +93,9 @@ article {
 	p {
 		margin-bottom: 1em;
 	}
+	p:last-of-type {
+		margin-bottom: 2em;
+	}
 }
 
 blockquote {
@@ -215,15 +218,10 @@ aside {
 .popular-posts {
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
-	width: 90%;
-	margin-right: auto;
-	margin-left: auto;
 }
 
 .posts-float {
 	overflow: hidden;
-	width: 90%;
-	margin: 0 auto;
 	.popular-posts-photos {
 		width: 28%;
 		min-height: 5.5em;
@@ -234,6 +232,7 @@ aside {
 	.outside-p {
 		float: left;
 		padding-top: 2em;
+		width: calc(100% - 28% - 1em);
 	}
 	.inside-p {
 		display: none;
@@ -271,6 +270,7 @@ aside {
 footer {
 	padding-top: 1em;
 	overflow: hidden;
+	margin-top: 3em;
 		.footer-logo-container {
 			.tiy-logo {
 				background-image: url(../IMG/theironyard.png);
@@ -292,6 +292,7 @@ footer {
 }
 
 .footer-nav {
+	margin-bottom: 1em;
 	ul {
 		width: 95%;
 		margin: 0 auto;
