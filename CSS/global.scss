@@ -121,6 +121,7 @@ blockquote {
 	vertical-align: top;
 	background-repeat: no-repeat;
 	box-sizing: border-box;
+	-moz-box-sizing: border-box
 	padding-right: 33px;
 	padding-bottom: 30px;
 	height: 1.875em;
@@ -143,6 +144,7 @@ blockquote {
 	display: inline-block;
 	margin-left: 0.5em;
 	box-sizing: border-box;
+	-moz-box-sizing: border-box
 	padding-top: 0.15em;
 }
 
