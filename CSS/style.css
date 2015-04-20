@@ -90,7 +90,7 @@ a:hover .comments, a:hover .later, a:hover .share {
   background-color: #106db3; }
 
 aside {
-  color: #a3b3bf; }
+  color: #859aaa; }
 
 .sidebar-author-name {
   color: #106db3; }
@@ -119,61 +119,81 @@ footer {
   color: #fff;
   text-shadow: 3px 3px 3px black; }
 
-body {
-  font-family: "Open Sans", sans-serif; }
-
 p {
-  line-height: 1.8; }
+  line-height: 1.8;
+  font-family: "source-sans-pro", sans-serif; }
 
-h2, h3 {
+.posts-float p {
   line-height: 1.2; }
 
+h2, h3 {
+  font-family: "source-sans-pro", sans-serif;
+  line-height: 1.2;
+  font-weight: 600; }
+
 h3 {
-  font-size: 1.5em;
-  font-weight: 400; }
+  font-size: 1.5em; }
 
 h2 {
   font-size: 2em; }
 
+h1 {
+  font-family: "source-sans-pro", sans-serif;
+  font-size: 4em;
+  font-weight: 400; }
+
 li {
+  font-family: "source-sans-pro", sans-serif;
   font-weight: 600; }
 
-.article-header h2 {
-  font-weight: 600;
-  font-size: 1.8125em; }
-.article-header .author-name {
-  font-weight: 600;
-  font-size: 0.875em; }
-.article-header .date {
-  font-size: 0.875em; }
+.article-header {
+  font-family: "source-sans-pro", sans-serif; }
+  .article-header h2 {
+    font-weight: 600;
+    font-size: 1.8125em; }
+  .article-header .author-name {
+    font-weight: 600;
+    font-size: 0.875em; }
+  .article-header .date {
+    font-size: 0.875em; }
 
 blockquote {
+  font-family: "source-sans-pro", sans-serif;
   font-size: 1.875em;
-  font-weight: 600;
-  line-height: 1.5; }
+  font-weight: 400;
+  line-height: 1.5;
+  font-style: italic; }
 
 .comments, .later, .share {
   font-size: 0.875em;
-  font-weight: 600; }
+  font-weight: 600;
+  font-family: "source-sans-pro", sans-serif; }
 
 .sidebar-author-name {
   font-weight: 600;
-  font-size: 0.875em; }
+  font-size: 0.875em;
+  font-family: "source-sans-pro", sans-serif; }
 
 .aside-caption {
   font-size: 0.875em;
-  line-height: 1.3; }
+  line-height: 1.3;
+  font-family: "source-sans-pro", sans-serif; }
 
-.sidebar-content h4 {
-  font-size: 1.125em;
-  color: #106db3; }
-.sidebar-content p {
-  font-size: 0.875em; }
+.sidebar-content {
+  font-family: "source-sans-pro", sans-serif; }
+  .sidebar-content h4 {
+    font-size: 1.125em;
+    color: #106db3; }
+  .sidebar-content p {
+    font-size: 0.875em; }
 
-.footer-logo-container p {
-  font-size: 0.8em; }
+.footer-logo-container {
+  font-family: "source-sans-pro", sans-serif; }
+  .footer-logo-container p {
+    font-size: 0.8em; }
 
 .footer-nav {
+  font-family: "source-sans-pro", sans-serif;
   font-size: 0.875em; }
 
 /***whole page***/
@@ -208,7 +228,8 @@ header {
   .header-nav li {
     display: inline-block; }
     .header-nav li a {
-      text-decoration: none; }
+      text-decoration: none;
+      letter-spacing: 0.02em; }
   .header-nav li:nth-of-type(2) {
     padding-left: 1.25em; }
 
@@ -270,6 +291,7 @@ blockquote {
   vertical-align: top;
   background-repeat: no-repeat;
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
   padding-right: 33px;
   padding-bottom: 30px;
   height: 1.875em;
@@ -288,6 +310,7 @@ blockquote {
   display: inline-block;
   margin-left: 0.5em;
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
   padding-top: 0.15em; }
 
 /***aside***/
@@ -353,6 +376,7 @@ aside {
   margin-left: auto; }
 
 .posts-container {
+  overflow: hidden;
   width: 90%;
   margin-right: auto;
   margin-left: auto; }
@@ -456,9 +480,7 @@ footer {
       display: block;
       text-align: center;
       margin-top: 1em;
-      margin-bottom: 0.25em;
-      font-size: 4em;
-      font-weight: 600; }
+      margin-bottom: 0.25em; }
 
   /***main content***/
   .article-header {
@@ -512,6 +534,9 @@ footer {
     margin-top: 3.5em;
     margin-left: 1em; }
 
+  .aside-caption {
+    text-align: center; }
+
   /***popular posts***/
   .posts-float {
     width: 46%;
@@ -523,17 +548,24 @@ footer {
 
   /***footer***/
   footer {
-    clear: both; } }
+    clear: both;
+    margin-top: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem; } }
 @media screen and (min-width: 1000px) {
   /***header***/
   header {
     padding-top: 2em;
     padding-bottom: 3em; }
 
+  .header-wrapper {
+    padding-top: 0rem; }
+
   .big-header-text h1 {
     font-size: 5em;
     margin-top: 0;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    padding-top: 4rem; }
 
   /***article***/
   .main-content {
@@ -561,6 +593,9 @@ footer {
     aside .author-social {
       margin-left: 0;
       margin-top: 0.5em; }
+
+  .aside-caption {
+    text-align: left; }
 
   /***popular posts***/
   .popular-posts {
@@ -595,7 +630,8 @@ footer {
       float: none;
       padding-top: 6em; }
       .posts-float .inside-p:hover {
-        text-shadow: 3px 3px 3px black; }
+        text-shadow: 3px 3px 3px black;
+        cursor: pointer; }
 
   .posts-float:nth-of-type(even) {
     margin-right: 0; }

@@ -84,7 +84,7 @@ a:hover .comments, a:hover .later, a:hover .share {
 }
 
 aside {
-	color: $aside-text;
+	color: darken($aside-text, 10%);
 }
 
 .sidebar-author-name {

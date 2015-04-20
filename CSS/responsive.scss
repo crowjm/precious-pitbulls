@@ -36,8 +36,6 @@
 		text-align: center;
 		margin-top: 1em;
 		margin-bottom: 0.25em;
-		font-size: 4em;
-		font-weight: 600;
 	}
 }
 
@@ -107,6 +105,10 @@ aside {
 	margin-left: 1em;
 }
 
+.aside-caption {
+	text-align: center;
+}
+
 
 /***popular posts***/
 .posts-float {
@@ -123,6 +125,9 @@ aside {
 /***footer***/
 footer {
 	clear: both;
+	margin-top: 0;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 }		
 }
 
@@ -135,11 +140,16 @@ header {
 	padding-bottom: 3em;
 }
 
+.header-wrapper {
+	padding-top: 0rem;
+}
+
 .big-header-text {
 	h1 {
 		font-size: 5em;
 		margin-top: 0;
 		margin-bottom: 0;
+		padding-top: 4rem;
 	} 
 }
 
@@ -176,6 +186,9 @@ aside {
 	}
 }
 
+.aside-caption {
+	text-align: left;
+}
 
 /***popular posts***/
 .popular-posts {
@@ -215,6 +228,7 @@ aside {
 		padding-top: 6em;
 		&:hover {
 			text-shadow: 3px 3px 3px black;
+			cursor: pointer;
 		}
 	}
 }
